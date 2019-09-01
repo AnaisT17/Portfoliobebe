@@ -1,0 +1,371 @@
+/*-------------------------------------- HTML PAGE AND BODY-------------------------------*/
+html {
+    font-size: 10px;
+    margin : 0;
+    padding : 0; 
+}
+
+*{
+    text-decoration:none; 
+}
+
+body{
+
+    /* réglage mobile et + */
+    font-family:sans-serif;
+    font-size:16px;
+  }
+
+/*-------------------------------------- GENERAL CONTENT: FIXE -------------------------------*/
+
+/*--------------------- HEADER SECTION------------------*/
+
+header{
+    display: grid; 
+    grid-rows: 1 / 13;
+    grid-column: 1 / 2;
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+header .header-logo{
+    display: grid;
+    grid-row-start: auto;
+    grid-column: 1/ 3;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    color: #111;
+    font-weight: 900;
+    text-transform: uppercase;
+    align-content: center;
+    margin: 0 auto;
+    padding: 20px 0;
+
+}
+header nav ul{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 12px;    
+
+}
+header nav ul li{
+    display: inline-block;
+    float: left; 
+    list-style: none;
+    padding: 0 16px;
+    
+}
+header nav ul li a{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    color: #111;
+    font-weight: 900;
+    align-content: center;
+}
+
+header .header-cases{
+    display: none;
+}
+header .menu {
+    display: grid;
+    grid-column:  8/ 13;
+    align-content: center;
+}
+
+
+
+
+
+
+/*--------------------- BANNER ------------------*/
+
+.banner-index{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/love-home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.banner-index h2{
+    font-family:'Cormorant Garamond', serif;;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 2px 2px 8px #111;
+}
+
+.banner-index h1{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 2px 2px 8px #111;
+}
+
+/*--------------------- FOOTER SECTION ------------------*/
+
+footer{
+    display: grid;
+    width: calc(100% - 80px);
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px ; 
+    align-content: center;
+}
+
+
+/*--------------------- INFORMATIONS PRODUCTION ------------------*/
+
+.text-info {
+    grid: flex;
+    margin: 0;
+    padding: 10px;
+    align-content: center;
+    color: #111;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+}
+
+.yeswebwebprod {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    color: #111;
+    text-align: center;
+}
+
+/*-------------------------------------- INDEX.HTML-------------------------------*/
+
+.box-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.box-links div{
+    margin: 16px 16px 0;
+    width:calc (100% - 32px);
+    height: 100px;
+    background-color: #f2f2f2;
+	padding: 30px;
+}
+
+.box-links div h3{
+    font-family: Catamaran;
+    font-size: 25px;
+    font-weight: 100px;
+    line-height: 100px;
+    color: #111;
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;  
+}
+
+
+
+/*-------------------------------------- ABOUT.HTML-------------------------------*/
+
+.portrait {
+    border-radius: 20%;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+}
+.propos{
+    display: block;
+    margin: 2rem;
+    padding: 1rem;
+}
+.propos h1 {
+    font-size: 30px;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    color: #FEB41C;
+}
+
+.propos h2 {
+    font-size: 20px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.propos article ul li {
+    font-size: 15px;
+}
+
+.propos p {
+    font-size: 15px;
+}
+
+
+
+/*-------------------------------------- PRESTATIONS.HTML-------------------------------*/
+
+.tab-prestatation{
+    display: grid;
+    margin: 50px;
+    padding: 10px;
+    font-size: 25px;
+    color: #111;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.price{
+    text-align: center;
+}
+
+.title-prestatation {
+    text-align: center;
+    color: #FEB41C;
+}
+
+td{
+    margin: 5px;
+    padding: 15px;
+}
+
+.account {
+    text-align: center;
+    font-size: 17px;
+}
+
+
+
+/*-------------------------------------- CONTACT.HTML-------------------------------*/
+
+.contact {
+    margin-top: 100px;
+    color: #111;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+    text-align: center;
+}
+
+.contact h1{
+    font-size: 32px;
+    line-height: 10px;
+    text-align: center;
+}
+
+.contact p{
+    font-size: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: lowercase;
+}
+
+form {
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #111;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background: #FEB41C;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px
+}
+
+form .submit:hover{
+    background-color: #FEB41C;
+    cursor: pointer;
+}
+
+.contact-form {
+    display: grid;
+    justify-content: center;
+    margin : 20px;
+}
+
+iframe { 
+    width: 100%; 
+}
+
+
+/*-------------------------------------- MEDIA QUERIES-------------------------------*/
+
+/*--------------------- TABLET VERSION ------------------*/
+
+/***************** all pages ****************/
+
+@media screen and (min-width: 760px) and (max-width: 1050px){
+
+    header .header-logo {
+        margin: 10px;
+        text-align: left;
+        padding: 0 20px 0 40px;
+        border-right: 2px solid #FEB41C;
+        float: left;
+        line-height: 40px;
+    }
+
+
+/*--------------------- SMARTPHONE VERSION ------------------*/
+
+/***************** all pages ****************/
+
+@media screen and (min-width: 640px){
+
+body{
+    /* réglage à partir de 640px et + : corps un peu plus grand et même typo */
+    font-size:21px;
+       }
+.header-logo {
+    {
+        width: 80px;
+        height: 80px;
+}
+footer {
+    width: 600px;
+    height: 500px;
+}
+
+/***************** index.html ****************/
+.menu {
+    display: none;
+}
+
+
+/***************** contact.html ****************/
+
+.contact-form {
+    width: 100%;
+}
+}
